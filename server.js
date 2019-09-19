@@ -4,7 +4,7 @@ const app = express();
 
 app.use(express.json());
 
-const port = process.env.BASE_URL_BACK || 8000;
+const port = process.env.BASE_URL_BACK;
 
 app.listen(port, () => {
   console.log(`Server started on ${port} port `)
