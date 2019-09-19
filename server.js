@@ -7,10 +7,9 @@ app.get('/', (req, res) => {
 })
 app.use(express.json());
 
-const port = process.env.BASE_URL_BACK || 8000;
 
 
 
-app.listen(port, () => {
+app.listen(process.env.BASE_URL_BACK, () => {
   console.log(`Server started on ${port} port `)
 })
